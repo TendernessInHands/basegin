@@ -1,0 +1,17 @@
+loglevel: debug
+
+server:
+  host: localhost
+  port: 8080
+database:
+  username: root
+  password: Li123456
+  name: app_db
+mysql:
+  addr: 101.42.5.109:3306
+  user: root
+  password: Li123456
+  database: app_db
+  maxidleconns: 10
+  maxopenconns: 100
+
