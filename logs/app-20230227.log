@@ -1,0 +1,11 @@
+{"level":"info","msg":"","time":"2023-02-27 14:01:21"}
+{"level":"info","msg":"","time":"2023-02-27 14:01:21"}
+{"level":"info","msg":"","time":"2023-02-27 14:01:21"}
+{"level":"info","msg":"","time":"2023-02-27 14:01:21"}
+{"level":"info","msg":"","time":"2023-02-27 14:01:21"}
+{"level":"info","msg":"","time":"2023-02-27 14:01:21"}
+{"level":"info","msg":"","time":"2023-02-27 14:01:21"}
+{"level":"info","msg":"","time":"2023-02-27 14:01:21"}
+{"level":"info","msg":"","time":"2023-02-27 14:01:21"}
+{"level":"info","msg":"","time":"2023-02-27 14:01:21"}
+{"clientIp":"127.0.0.1","dataLength":0,"handle":"github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1","httpCode":404,"latency":0,"level":"info","method":"GET","msg":"null","referer":"","requestBody":"","requestId":"56508c733dbb0b4a:56508c733dbb0b4a:0000000000000000:1","requestPath":"/health","retCode":0,"time":"2023-02-27 14:01:49","type":"http","userAgent":"PostmanRuntime-ApipostRuntime/1.1.0"}
