@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS ydktest  DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+use ydktest;
+
 DROP TABLE if exists `config`;
 CREATE TABLE `config` (
                           `id` bigint(20) NOT NULL AUTO_INCREMENT,

@@ -3,7 +3,9 @@ package controller
 import (
 	"github.com/basegin/base/log"
 	models "github.com/basegin/model"
+	RedisUtil "github.com/basegin/redis"
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
 type ConfigParam struct {
@@ -23,4 +25,15 @@ func GetConfig(c *gin.Context) {
 	}
 
 	log.RenderJsonSucc(c, gin.H{"value": v})
+}
+
+func SetRedis(c *gin.Context) {
+	RedisUtil.RedisClient.SetStr(c.Query("key"), c.Query("val"))
+	c.JSON(http.StatusOK, log.ResultSuccess)
+}
+
+func GetRedis(c *gin.Context) {
+	key := c.Query("val")
+	val, _ := RedisUtil.RedisClient.GetStr(key)
+	c.JSON(http.StatusOK, log.ResultMsgData("设置成功", val))
 }

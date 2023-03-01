@@ -10,7 +10,9 @@ import (
 type TConf struct {
 	LogLevel string `yaml:"loglevel"`
 	Redis    struct {
-		Addr string `yaml:"addr"`
+		Addr     string `yaml:"addr"`
+		Port     int    `yaml:"Port"`
+		Password string `yaml:"password"`
 	} `yaml:"redis"`
 	Mysql struct {
 		Addr         string `yaml:"addr"`

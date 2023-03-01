@@ -15,7 +15,7 @@ type TRenderJson struct {
 }
 
 func RenderJsonSucc(ctx *gin.Context, data map[string]interface{}) {
-	renderjson := TRenderJson{0, "succ", "成功", data}
+	renderjson := TRenderJson{200, "succ", "成功", data}
 	ctx.JSON(http.StatusOK, renderjson)
 	ctx.Set("render", renderjson)
 	return
